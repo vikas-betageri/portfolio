@@ -856,3 +856,108 @@ footer p a:hover::after {
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(135deg, var(--primary-dark), var(--secondary));
 }
+
+/* Additional Media Queries for Better Responsiveness */
+
+@media (max-width: 480px) {
+  .intro h1 {
+    font-size: 1.8rem;
+  }
+
+  #element {
+    font-size: 1.5rem;
+    min-height: 50px;
+  }
+
+  .content .image img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .Skills h2, .Certification h2, footer h2 {
+    font-size: 1.6rem;
+  }
+
+  .language h3, .dev h3 {
+    font-size: 1.3rem;
+  }
+
+  .Skills ul {
+    gap: 0.5rem;
+    margin: 20px 5px;
+  }
+
+  .Skills ul li {
+    padding: 0.5rem;
+  }
+
+  .language img, .dev img {
+    width: 60px;
+  }
+
+  /* Slider adjustments */
+  .slide {
+    width: 140px;
+  }
+
+  .slide-track {
+    width: calc(140px * 8);
+  }
+
+  .slide img {
+    border-radius: 10px;
+  }
+
+  .tag h2 {
+    font-size: 1.3rem;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .intro h1 {
+    font-size: 1.5rem;
+  }
+
+  #element {
+    font-size: 1.2rem;
+  }
+
+  .content .image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .Skills h2, .Certification h2, footer h2 {
+    font-size: 1.4rem;
+  }
+
+  .language h3, .dev h3 {
+    font-size: 1.1rem;
+  }
+
+  .language img, .dev img {
+    width: 50px;
+  }
+
+  .slide {
+    width: 120px;
+  }
+
+  .slide-track {
+    width: calc(120px * 8);
+  }
+
+  .tag h2 {
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+    flex-direction: column;
+  }
+}
